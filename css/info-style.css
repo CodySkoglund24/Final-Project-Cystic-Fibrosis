@@ -1,0 +1,91 @@
+:root{
+    --font-size: 1vw;
+    --color-blue: #0078AA; 
+    --color-yellow: #F2DF3A;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    color: var(--color-blue);
+}
+
+nav{
+    background-color:var(--color-blue);
+    text-align: center;
+    text-decoration: dashed;
+    background-image: linear-gradient( 60deg, var(--color-yellow), var(--color-blue));
+
+}
+
+nav a{
+    padding: 20px;
+    display:inline-flex;
+    color: white;
+    text-decoration:dashed;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3{
+    color:var(--color-blue);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration-style: wavy; 
+    text-underline-offset: 6px;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 6% 0;
+    text-align: center;
+    text-shadow: 3px 5px 3px var(--color-yellow);
+    background-image: linear-gradient( 60deg, var(--color-yellow), var(--color-blue));
+    background-clip: text;
+    color:transparent;
+    
+
+}
+
+
+a:hover{
+    animation-duration: 3s;
+    animation-name: color-fade;
+    background-color: var(--color-blue);
+    color: white;
+}
+
+
+
+
+@keyframes color-fade {
+    
+    0% {
+        background-color: transparent;
+        color: var(--color-blue);
+    }
+    
+    25% {
+        background-color: var(--color-yellow);
+    }
+    
+    50% {
+        background-color: #3B2E5A;
+    }
+    
+    75% {
+        background-color: var(--color-blue);
+    }
+    
+    100% {
+        background-color: var(--color-yellow);
+        color: white;
+    }
+    
+}
+
+p{
+    margin-bottom: 50px;
+}
